@@ -1,17 +1,17 @@
 from collections import OrderedDict
+from functools import partial
 from pathlib import Path
 
 from pydicom import dcmread
 from requests import Session, HTTPError
 
 from ..utils.CONFIG import Default_DCMFIELD
+from ..utils.experiments import create_experiment
 from ..utils.interfaces import Modality, MySubject, MyExperiment, MyScan, Gender, ExperimentType, ScanType, ScanQuality
-from ..utils.utils import get_dcm_field, fmt_date
-from functools import partial
 from ..utils.resources import upload_resources
 from ..utils.scans import create_scan
-from ..utils.experiments import create_experiment
 from ..utils.subjects import create_subject
+from ..utils.utils import get_dcm_field, fmt_date
 
 
 class UploadSubjects:
