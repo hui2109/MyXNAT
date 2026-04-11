@@ -68,7 +68,7 @@ class MySubject(BaseModel):
 
 # Study字段类
 class MyExperiment(BaseModel):
-    label: str = ''  # 序号 study_1
+    label: str = ''  # 序号 study_1_subjectLabel
     xsiType: ExperimentType | None = None  # 类型 默认均为 ExperimentType.RTSession
     date: str = ''  # 日期 '2023-05-15'
     note: str = ''  # 备注
@@ -83,7 +83,7 @@ class MyExperiment(BaseModel):
     acquisition_site: str = ''  # 采集地点 待定
 
     def __hash__(self):
-        return hash(self.label)  # id 字段已保证唯一性
+        return hash(self.studyid)  # studyid 字段已保证唯一性
 
     def __eq__(self, other):
         if isinstance(other, MyExperiment):
@@ -99,8 +99,8 @@ class MyScan(BaseModel):
     quality: ScanQuality | None = None  # 扫描质量 默认为 ScanQuality.usable
     scanner: str = ''  # 扫描机器 'SIEMENS_SOMATOM Definition AS_CTAWP95526' Manufacturer_Manufacturer’s Model Name_Station Name
     condition: str = ''  # 操作者(即采集这个Series的人的名字) 'yanyy'
-    series_description: str = ''  # Series Instance UID
-    note: str = ''  # 备注 Study Description__Series Description
+    note: str = ''  # Series Instance UID
+    series_description: str = ''  # 备注 Study Description___Series Description
     frames: str = ''  # 帧数
 
     # 待定字段
@@ -108,7 +108,7 @@ class MyScan(BaseModel):
     modality: str = ''
 
     def __hash__(self):
-        return hash(self.id)  # id 字段已保证唯一性
+        return hash(self.note)  # note 字段已保证唯一性
 
     def __eq__(self, other):
         if isinstance(other, MyScan):

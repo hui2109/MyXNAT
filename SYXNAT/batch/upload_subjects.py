@@ -2,12 +2,16 @@ from collections import OrderedDict
 from pathlib import Path
 
 from pydicom import dcmread
-from requests import Session
+from requests import Session, HTTPError
 
 from ..utils.CONFIG import Default_DCMFIELD
 from ..utils.interfaces import Modality, MySubject, MyExperiment, MyScan, Gender, ExperimentType, ScanType, ScanQuality
 from ..utils.utils import get_dcm_field, fmt_date
 from functools import partial
+from ..utils.resources import upload_resources
+from ..utils.scans import create_scan
+from ..utils.experiments import create_experiment
+from ..utils.subjects import create_subject
 
 
 class UploadSubjects:
@@ -15,7 +19,17 @@ class UploadSubjects:
         self.session = session
         self.projectID = projectID
         self.parent_P = Path(parent_dir)
-        self.project_data = OrderedDict()
+        self.project_data = OrderedDict({self.projectID: None})
+        self.project_tasks = OrderedDict({
+            self.projectID: OrderedDict(
+                {
+                    'subjects': [],
+                    'experiments': [],
+                    'scans': [],
+                    'resources': [],
+                }
+            )
+        })
 
     def __judge_CBCT(self, dcm_file):
         model_name = get_dcm_field(dcm_file, 'ManufacturerModelName').lower()
@@ -54,7 +68,7 @@ class UploadSubjects:
 
         # ── Experiment Fields ────────────────────────────────────────
         if self.my_experiment.label == '':
-            self.my_experiment.label = f"{self.study}_{self.idx}"
+            self.my_experiment.label = f"{self.study}_{self.idx}_{self.my_subject.label}"
 
         if self.my_experiment.xsiType is None:
             self.my_experiment.xsiType = ExperimentType.RTSession
@@ -65,7 +79,7 @@ class UploadSubjects:
         if self.my_experiment.operator == '':
             # PhysiciansOfRecord 是 PersonName 对象，必须先 str() 再 replace
             raw = get_dcm_field(dcm_file, 'PhysiciansOfRecord')
-            self.my_experiment.operator = raw.replace('^', '').replace('$', '')
+            self.my_experiment.operator = raw.replace('^', ' ').replace('$', ' ')
 
         if self.my_experiment.studyid == '':
             self.my_experiment.studyid = get_dcm_field(dcm_file, 'StudyInstanceUID')
@@ -95,15 +109,15 @@ class UploadSubjects:
         if self.my_scan.condition == '':
             # OperatorsName 同样是 PersonName 对象
             raw = get_dcm_field(dcm_file, 'OperatorsName')
-            self.my_scan.condition = raw.replace('^', '').replace('$', '')
+            self.my_scan.condition = raw.replace('^', ' ').replace('$', ' ')
 
         if self.my_scan.series_description == '':
-            self.my_scan.series_description = get_dcm_field(dcm_file, 'SeriesInstanceUID')
-
-        if self.my_scan.note == '':
             study_desc = get_dcm_field(dcm_file, 'StudyDescription')
             series_desc = get_dcm_field(dcm_file, 'SeriesDescription')
-            self.my_scan.note = f"{study_desc}___{series_desc}"
+            self.my_scan.series_description = f"{study_desc}___{series_desc}"
+
+        if self.my_scan.note == '':
+            self.my_scan.note = get_dcm_field(dcm_file, 'SeriesInstanceUID')
 
         if self.my_scan.frames == '':
             self.my_scan.frames = self.frames
@@ -140,37 +154,81 @@ class UploadSubjects:
                         self.my_scan = MyScan()
                         self.series_idx, self.frames = series_dir.name.split('_')
 
-                        file_list = []
+                        # file_list = []
                         for file in sorted(series_dir.iterdir(), key=lambda x: x.name):
                             if 'DS_Store' in file.name:
                                 continue
 
                             dcm_file = dcmread(file)
                             self.__parse_fields(dcm_file)
-                            file_list.append(file)
+                            # file_list.append(file)
 
                         # 把modality复原
                         self.modality = Modality(current_modality.value)
-                        scan_list.append(OrderedDict({self.my_scan: file_list}))
+                        scan_list.append(OrderedDict({self.my_scan: series_dir}))
                     modality_list += scan_list
                 experiment_list.append(OrderedDict({self.my_experiment: modality_list}))
             subject_list.append(OrderedDict({self.my_subject: experiment_list}))
 
         return subject_list
 
-    def __create_subjects_recursively(self):
-        pass
+    def __create_tasks_recursively(self):
+        for project_id, subject_list in self.project_data.items():
+            for subject_dict in subject_list:
+                for my_subject, experiment_list in subject_dict.items():
+                    for experiment_dict in experiment_list:
+                        for my_experiment, scan_list in experiment_dict.items():
+                            for scan_dict in scan_list:
+                                for my_scan, series_dir in scan_dict.items():
+                                    self.project_tasks[self.projectID]['resources'].append(
+                                        partial(upload_resources, self.session, project_id, my_subject.label, my_experiment.label, my_scan.id, series_dir))
+                                    self.project_tasks[self.projectID]['scans'].append(
+                                        partial(create_scan, self.session, project_id, my_subject.label, my_experiment.label, my_scan))
+                            self.project_tasks[self.projectID]['experiments'].append(
+                                partial(create_experiment, self.session, project_id, my_subject.label, my_experiment))
+                    self.project_tasks[self.projectID]['subjects'].append(
+                        partial(create_subject, self.session, project_id, my_subject))
 
-    def __upload_files_sequentially(self):
-        pass
-
-    def upload_subjects(self):
+    def creat_tasks(self):
         # 先整理数据
         subject_list = self._sort_by_subject()
-        self.project_data = OrderedDict({self.projectID: subject_list})
+        self.project_data[self.projectID] = subject_list
 
-        # 然后依次新建
-        self.__create_subjects_recursively()
+        # 然后依次新建task
+        self.__create_tasks_recursively()
 
-        # 最后批量上传
-        self.__upload_files_sequentially()
+    def handle_tasks_sequentially(self, *, subjects=True, experiments=True, scans=True, resources=True):
+        if subjects:
+            for subject_task in self.project_tasks[self.projectID]['subjects']:
+                status_code, text = subject_task()
+                if status_code not in (200, 201):
+                    print(f"[ERROR] [Subject] {subject_task=} {status_code=} {text=}")
+                    raise HTTPError()
+                else:
+                    print(f"[SUCCESS] [Subject] {subject_task.args[-1].label}")
+
+        if experiments:
+            for experiment_task in self.project_tasks[self.projectID]['experiments']:
+                status_code, text = experiment_task()
+                if status_code not in (200, 201):
+                    print(f"[ERROR] [Experiment] {experiment_task=} {status_code=} {text=}")
+                    raise HTTPError()
+                else:
+                    print(f"[SUCCESS] [Experiment] {experiment_task.args[-2]} {experiment_task.args[-1].label}")
+
+        if scans:
+            for scan_task in self.project_tasks[self.projectID]['scans']:
+                status_code, text = scan_task()
+                if status_code not in (200, 201):
+                    print(f"[ERROR] [Scan] {scan_task=} {status_code=} {text=}")
+                    raise HTTPError()
+                else:
+                    print(f"[SUCCESS] [Scan] {scan_task.args[-3]} {scan_task.args[-2]} {scan_task.args[-1].id}")
+
+        if resources:
+            for resource_task in self.project_tasks[self.projectID]['resources']:
+                failed_list = resource_task()
+                if failed_list:
+                    raise HTTPError()
+                else:
+                    print(f"[SUCCESS] [Resources] {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
