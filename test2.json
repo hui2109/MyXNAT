@@ -1,0 +1,47 @@
+{
+  "ResultSet": {
+    "Result": [
+      {
+        "file_count": "64",
+        "xnat_abstractresource_id": "124",
+        "cat_desc": "unknown",
+        "cat_id": "0-CT1",
+        "format": "DICOM",
+        "label": "DICOM",
+        "category": "scans",
+        "element_name": "xnat:resourceCatalog",
+        "file_size": "18997218",
+        "content": "RAW",
+        "tags": ""
+      },
+      {
+        "file_count": "1",
+        "xnat_abstractresource_id": "122",
+        "cat_desc": "S1_PDQA",
+        "cat_id": "0-OT1",
+        "format": "DICOM",
+        "label": "secondary",
+        "category": "scans",
+        "element_name": "xnat:resourceCatalog",
+        "file_size": "10466",
+        "content": "secondary",
+        "tags": ""
+      },
+      {
+        "file_count": "1",
+        "xnat_abstractresource_id": "123",
+        "cat_desc": "CBCT",
+        "cat_id": "0-OT2",
+        "format": "DICOM",
+        "label": "secondary",
+        "category": "scans",
+        "element_name": "xnat:resourceCatalog",
+        "file_size": "58676",
+        "content": "secondary",
+        "tags": ""
+      }
+    ],
+    "totalRecords": "3",
+    "title": "Resources"
+  }
+}

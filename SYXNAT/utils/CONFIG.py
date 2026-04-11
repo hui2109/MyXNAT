@@ -1,0 +1,5 @@
+URL = 'https://xnat.pemed.cn:9443'
+USER = 'admin'
+PASSWORD = 'uy*96+UU;'
+Default_DCMFIELD = 'KONG'
+Default_DATE = '1900-01-01'
