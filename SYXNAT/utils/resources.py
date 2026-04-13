@@ -39,39 +39,6 @@ def upload_resources(session: Session, projectID: str, subjectLabel: str, experi
     return failed
 
 
-# def upload_resources(session: Session, projectID: str, subjectLabel: str, experimentLabel: str, scanID: str, parent_dir: str, *, resource_label: str = 'DICOM', content_description: str = '', max_workers: int = 3):
-#     failed = []  # 记录失败的文件
-#     parent_P = Path(parent_dir)
-#     file_list = list(parent_P.glob('**/*.dcm'))
-#
-#     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-#         futures = [
-#             executor.submit(
-#                 __upload_resource,
-#                 session, projectID, subjectLabel, experimentLabel, scanID, fp, resource_label, content_description
-#             )
-#             for fp in file_list
-#         ]
-#
-#         with tqdm(total=sum([file.stat().st_size for file in file_list]), unit="B", unit_scale=True, desc="上传中") as bar:
-#             for future in as_completed(futures):
-#                 file_P, status_code, text = future.result()
-#                 if status_code not in (200, 201):
-#                     failed.append((file_P, status_code, text))
-#                 bar.update(file_P.stat().st_size)
-#             bar.set_description("✓ 上传完成")
-#
-#     # 汇报失败情况
-#     if failed:
-#         print(f"\n以下 {len(failed)} 个文件上传失败:")
-#         for file_P, code, msg in failed:
-#             print(f"  {file_P.name} -> HTTP {code}: {msg}")
-#     else:
-#         print(f"\n全部 {len(file_list)} 个文件上传成功!")
-#
-#     return failed
-
-
 def download_resources_by_scanIDs_or_scanTypes(session: Session, projectID: str, subjectLabel: str, experimentLabel: str, scanIDs_or_scanTypes: list[str], save_dir: str):
     save_P = Path(save_dir) / 'downloads.zip'
     # 先获取文件大小

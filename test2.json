@@ -1,47 +1,75 @@
 {
-  "ResultSet": {
-    "Result": [
-      {
-        "file_count": "64",
-        "xnat_abstractresource_id": "124",
-        "cat_desc": "unknown",
-        "cat_id": "0-CT1",
-        "format": "DICOM",
-        "label": "DICOM",
-        "category": "scans",
-        "element_name": "xnat:resourceCatalog",
-        "file_size": "18997218",
-        "content": "RAW",
-        "tags": ""
+  "items": [
+    {
+      "children": [
+        {
+          "field": "scans/scan",
+          "items": [
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 11313,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 13 09:39:48 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 64,
+                        "xnat_abstractresource_id": 251,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/GY0SBB_3/SCANS/YUI89H_6/DICOM/DICOM_catalog.xml",
+                        "file_size": 18996834,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 251
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 11185,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 13 09:35:48 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.61.2.5376444729313072185.498354118152214930",
+                "xnat_imagescandata_id": 4269,
+                "note": "hahaha",
+                "modality": "CT",
+                "frames": 64,
+                "project": "20260318",
+                "series_description": "uuigBGBH786987",
+                "image_session_ID": "SYZLXNAT_E00095",
+                "ID": "YUI89H_6",
+                "type": "CT",
+                "xnat_imageScanData_id": 4269,
+                "quality": "usable"
+              }
+            }
+          ]
+        }
+      ],
+      "meta": {
+        "create_event_id": 11184,
+        "xsi:type": "xnat:ctSessionData",
+        "isHistory": false,
+        "start_date": "Mon Apr 13 09:35:33 UTC 2026"
       },
-      {
-        "file_count": "1",
-        "xnat_abstractresource_id": "122",
-        "cat_desc": "S1_PDQA",
-        "cat_id": "0-OT1",
-        "format": "DICOM",
-        "label": "secondary",
-        "category": "scans",
-        "element_name": "xnat:resourceCatalog",
-        "file_size": "10466",
-        "content": "secondary",
-        "tags": ""
-      },
-      {
-        "file_count": "1",
-        "xnat_abstractresource_id": "123",
-        "cat_desc": "CBCT",
-        "cat_id": "0-OT2",
-        "format": "DICOM",
-        "label": "secondary",
-        "category": "scans",
-        "element_name": "xnat:resourceCatalog",
-        "file_size": "58676",
-        "content": "secondary",
-        "tags": ""
+      "data_fields": {
+        "subject_ID": "SYZLXNAT_S00067",
+        "UID": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841",
+        "project": "20260318",
+        "ID": "SYZLXNAT_E00095",
+        "label": "GY0SBB_3",
+        "id": "SYZLXNAT_E00095"
       }
-    ],
-    "totalRecords": "3",
-    "title": "Resources"
-  }
+    }
+  ]
 }

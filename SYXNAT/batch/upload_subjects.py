@@ -87,6 +87,9 @@ class UploadSubjects:
         if self.modality.value not in self.my_experiment.modalities:
             self.my_experiment.modalities.append(self.modality.value)
 
+        if self.my_experiment.UID == '':
+            self.my_experiment.UID = self.my_experiment.studyid
+
         # ── Scan Fields ──────────────────────────────────────────────
         if self.my_scan.id == '':
             self.my_scan.id = f"{self.modality.name}_{self.series_idx}_{self.frames}"
@@ -122,6 +125,12 @@ class UploadSubjects:
         if self.my_scan.frames == '':
             self.my_scan.frames = self.frames
 
+        if self.my_scan.UID == '':
+            self.my_scan.UID = self.my_scan.note
+
+        if self.my_scan.modality == '':
+            self.my_scan.modality = self.current_modality.name  # 使用最原始的modality
+
     def _sort_by_subject(self):
         subject_list = []
         for subject_dir in sorted(self.parent_P.iterdir(), key=lambda x: x.name):
@@ -143,8 +152,8 @@ class UploadSubjects:
                     if not modality_dir.is_dir():
                         continue
 
-                    current_modality = Modality(modality_dir.name.split('_')[-1])
-                    self.modality = Modality(current_modality.value)
+                    self.current_modality = Modality(modality_dir.name.split('_')[-1])
+                    self.modality = Modality(self.current_modality.value)
 
                     scan_list = []
                     for series_dir in sorted(modality_dir.iterdir(), key=lambda x: x.name):
@@ -164,7 +173,7 @@ class UploadSubjects:
                             # file_list.append(file)
 
                         # 把modality复原
-                        self.modality = Modality(current_modality.value)
+                        self.modality = Modality(self.current_modality.value)
                         scan_list.append(OrderedDict({self.my_scan: series_dir}))
                     modality_list += scan_list
                 experiment_list.append(OrderedDict({self.my_experiment: modality_list}))
@@ -197,7 +206,7 @@ class UploadSubjects:
         # 然后依次新建task
         self.__create_tasks_recursively()
 
-    def handle_tasks_sequentially(self, *, subjects=True, experiments=True, scans=True, resources=True):
+    def handle_tasks_sequentially(self, *, subjects=True, experiments=True, scans=True, resources=True, recover_index=0):
         if subjects:
             for subject_task in self.project_tasks[self.projectID]['subjects']:
                 status_code, text = subject_task()
@@ -226,9 +235,14 @@ class UploadSubjects:
                     print(f"[SUCCESS] [Scan] {scan_task.args[-3]} {scan_task.args[-2]} {scan_task.args[-1].id}")
 
         if resources:
-            for resource_task in self.project_tasks[self.projectID]['resources']:
+            for idx, resource_task in enumerate(self.project_tasks[self.projectID]['resources']):
+                if idx < recover_index:
+                    continue
+
+                print(f"[INFO] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
                 failed_list = resource_task()
                 if failed_list:
+                    print(f"[ERROR] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
                     raise HTTPError()
                 else:
-                    print(f"[SUCCESS] [Resources] {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
+                    print(f"[SUCCESS] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")

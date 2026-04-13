@@ -17,7 +17,7 @@ class Handedness(Enum):
 
 
 class ExperimentType(Enum):
-    CTSession = 'xnat:crSessionData'
+    CTSession = 'xnat:ctSessionData'
     MRSession = 'xnat:mrSessionData'
     RTSession = 'xnat:rtSessionData'
 
@@ -76,6 +76,7 @@ class MyExperiment(BaseModel):
     # 自定义字段
     studyid: str = ''  # Study Instance UID
     modalities: list[str] = []  # 成像类型 ['CT', 'CBCT', 'RP']
+    UID: str = ''  # 重要 Study Instance UID
 
     # 待定字段
     visit_id: str = ''  # 访问ID 待定
@@ -102,10 +103,11 @@ class MyScan(BaseModel):
     note: str = ''  # Series Instance UID
     series_description: str = ''  # 备注 Study Description___Series Description
     frames: str = ''  # 帧数
+    UID: str = ''  # 重要 Series Instance UID
+    modality: str = ''
 
     # 待定字段
     documentation: str = ''
-    modality: str = ''
 
     def __hash__(self):
         return hash(self.note)  # note 字段已保证唯一性

@@ -1,739 +1,2958 @@
 {
-  "ResultSet": {
-    "Columns": [
-      {
-        "key": "URI",
-        "serverRoot": ""
+  "items": [
+    {
+      "children": [
+        {
+          "field": "scans/scan",
+          "items": [
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 64,
+                        "xnat_abstractresource_id": 124,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-CT1/DICOM/scan_0-CT1_catalog.xml",
+                        "file_size": 18997218,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 124
+                      }
+                    },
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 959,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Thu Apr 09 13:57:24 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 176,
+                        "format": "GIF",
+                        "description": "Snapshots for session SYZLXNAT_E00004 scan 0-CT1",
+                        "label": "SNAPSHOTS",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-CT1/SNAPSHOTS/0-CT1_catalog.xml",
+                        "content": "SNAPSHOTS",
+                        "file_size": 62423,
+                        "xnat_abstractResource_id": 176
+                      }
+                    }
+                  ]
+                },
+                {
+                  "field": "parameters/focalSpots/focalSpot",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:ctScanData_focalSpot",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "xnat_ctScanData_focalSpot_id": 17,
+                        "focalSpot": 0.1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "CT",
+                "parameters/distanceSourceToDetector": 1503.04827449093,
+                "parameters/kvp": 125,
+                "parameters/options": "SHARP",
+                "parameters/tableHeight": 99,
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 118,
+                "parameters/voxelRes/z": 2.5,
+                "xnat_imagescandata_id": 118,
+                "parameters/voxelRes/x": 1.171875,
+                "parameters/voxelRes/y": 1.171875,
+                "parameters/rotationDirection": "CW",
+                "scanner": "TR-SN6382",
+                "parameters/imageType": "ORIGINAL\\\\PRIMARY\\\\AXIAL",
+                "startTime": "10:32:29",
+                "parameters/acquisitionNumber": 1,
+                "ID": "0-CT1",
+                "parameters/xrayTubeCurrent": 80,
+                "parameters/rescale/intercept": "-1000",
+                "start_date": "2025-06-10",
+                "parameters/convolutionKernel": "Ram-Lak",
+                "frames": 64,
+                "parameters/collectionDiameter": 450,
+                "parameters/rescale/slope": "1",
+                "parameters/fov/y": 384,
+                "scanner/model": "OBI Cone-beam CT",
+                "parameters/fov/x": 384,
+                "quality": "usable",
+                "parameters/exposureTime": 8463,
+                "UID": "1.2.246.352.61.2.4672650653178755524.2683256922993969549",
+                "parameters/gantryTilt": 0,
+                "parameters/orientation": "Tra",
+                "parameters/exposure": 677,
+                "parameters/distanceSourceToPatient": 0
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 64,
+                        "xnat_abstractresource_id": 130,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-CT2/DICOM/scan_0-CT2_catalog.xml",
+                        "file_size": 19000292,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 130
+                      }
+                    }
+                  ]
+                },
+                {
+                  "field": "parameters/focalSpots/focalSpot",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:ctScanData_focalSpot",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "xnat_ctScanData_focalSpot_id": 18,
+                        "focalSpot": 0.1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "CT",
+                "parameters/distanceSourceToDetector": 1503.04827449093,
+                "parameters/kvp": 125,
+                "parameters/options": "SHARP",
+                "parameters/tableHeight": 98,
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 124,
+                "parameters/voxelRes/z": 2.5,
+                "xnat_imagescandata_id": 124,
+                "parameters/voxelRes/x": 1.171875,
+                "parameters/voxelRes/y": 1.171875,
+                "parameters/rotationDirection": "CW",
+                "scanner": "TR-SN6382",
+                "parameters/imageType": "ORIGINAL\\\\PRIMARY\\\\AXIAL",
+                "startTime": "10:33:23",
+                "parameters/acquisitionNumber": 1,
+                "ID": "0-CT2",
+                "parameters/xrayTubeCurrent": 80,
+                "parameters/rescale/intercept": "-1000",
+                "start_date": "2025-06-16",
+                "parameters/convolutionKernel": "Ram-Lak",
+                "frames": 64,
+                "parameters/collectionDiameter": 450,
+                "parameters/rescale/slope": "1",
+                "parameters/fov/y": 384,
+                "scanner/model": "OBI Cone-beam CT",
+                "parameters/fov/x": 384,
+                "quality": "usable",
+                "parameters/exposureTime": 8502,
+                "UID": "1.2.246.352.61.2.5111163019929385311.6686665517476987580",
+                "parameters/gantryTilt": 0,
+                "parameters/orientation": "Tra",
+                "parameters/exposure": 680,
+                "parameters/distanceSourceToPatient": 0
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 64,
+                        "xnat_abstractresource_id": 132,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-CT3/DICOM/scan_0-CT3_catalog.xml",
+                        "file_size": 19001324,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 132
+                      }
+                    }
+                  ]
+                },
+                {
+                  "field": "parameters/focalSpots/focalSpot",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:ctScanData_focalSpot",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "xnat_ctScanData_focalSpot_id": 19,
+                        "focalSpot": 0.1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "CT",
+                "parameters/distanceSourceToDetector": 1503.04827449093,
+                "parameters/kvp": 125,
+                "parameters/options": "SHARP",
+                "parameters/tableHeight": 99,
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 126,
+                "parameters/voxelRes/z": 2.5,
+                "xnat_imagescandata_id": 126,
+                "parameters/voxelRes/x": 1.171875,
+                "parameters/voxelRes/y": 1.171875,
+                "parameters/rotationDirection": "CW",
+                "scanner": "TR-SN6382",
+                "parameters/imageType": "ORIGINAL\\\\PRIMARY\\\\AXIAL",
+                "startTime": "10:24:08",
+                "parameters/acquisitionNumber": 1,
+                "ID": "0-CT3",
+                "parameters/xrayTubeCurrent": 80,
+                "parameters/rescale/intercept": "-1000",
+                "start_date": "2025-06-03",
+                "parameters/convolutionKernel": "Ram-Lak",
+                "frames": 64,
+                "parameters/collectionDiameter": 450,
+                "parameters/rescale/slope": "1",
+                "parameters/fov/y": 384,
+                "scanner/model": "OBI Cone-beam CT",
+                "parameters/fov/x": 384,
+                "quality": "usable",
+                "parameters/exposureTime": 8463,
+                "UID": "1.2.246.352.61.2.5329691981232978248.12419310891331689397",
+                "parameters/gantryTilt": 0,
+                "parameters/orientation": "Tra",
+                "parameters/exposure": 677,
+                "parameters/distanceSourceToPatient": 0
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 64,
+                        "xnat_abstractresource_id": 133,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-CT4/DICOM/scan_0-CT4_catalog.xml",
+                        "file_size": 18997218,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 133
+                      }
+                    }
+                  ]
+                },
+                {
+                  "field": "parameters/focalSpots/focalSpot",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:ctScanData_focalSpot",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "xnat_ctScanData_focalSpot_id": 20,
+                        "focalSpot": 0.1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "CT",
+                "parameters/distanceSourceToDetector": 1503.04827449093,
+                "parameters/kvp": 125,
+                "parameters/options": "SHARP",
+                "parameters/tableHeight": 95,
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 127,
+                "parameters/voxelRes/z": 2.5,
+                "xnat_imagescandata_id": 127,
+                "parameters/voxelRes/x": 1.171875,
+                "parameters/voxelRes/y": 1.171875,
+                "parameters/rotationDirection": "CW",
+                "scanner": "TR-SN6382",
+                "parameters/imageType": "ORIGINAL\\\\PRIMARY\\\\AXIAL",
+                "startTime": "11:13:23",
+                "parameters/acquisitionNumber": 1,
+                "ID": "0-CT4",
+                "parameters/xrayTubeCurrent": 80,
+                "parameters/rescale/intercept": "-1000",
+                "start_date": "2025-05-26",
+                "parameters/convolutionKernel": "Ram-Lak",
+                "frames": 64,
+                "parameters/collectionDiameter": 450,
+                "parameters/rescale/slope": "1",
+                "parameters/fov/y": 384,
+                "scanner/model": "OBI Cone-beam CT",
+                "parameters/fov/x": 384,
+                "quality": "usable",
+                "parameters/exposureTime": 8476,
+                "UID": "1.2.246.352.61.2.5376444729313072185.498354118152214930",
+                "parameters/gantryTilt": 0,
+                "parameters/orientation": "Tra",
+                "parameters/exposure": 678,
+                "parameters/distanceSourceToPatient": 0
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 64,
+                        "xnat_abstractresource_id": 135,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-CT5/DICOM/scan_0-CT5_catalog.xml",
+                        "file_size": 18997602,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 135
+                      }
+                    }
+                  ]
+                },
+                {
+                  "field": "parameters/focalSpots/focalSpot",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:ctScanData_focalSpot",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "xnat_ctScanData_focalSpot_id": 21,
+                        "focalSpot": 0.1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "CT",
+                "parameters/distanceSourceToDetector": 1503.04827449093,
+                "parameters/kvp": 125,
+                "parameters/options": "SHARP",
+                "parameters/tableHeight": 100,
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 129,
+                "parameters/voxelRes/z": 2.5,
+                "xnat_imagescandata_id": 129,
+                "parameters/voxelRes/x": 1.171875,
+                "parameters/voxelRes/y": 1.171875,
+                "parameters/rotationDirection": "CW",
+                "scanner": "TR-SN6382",
+                "parameters/imageType": "ORIGINAL\\\\PRIMARY\\\\AXIAL",
+                "startTime": "10:23:04",
+                "parameters/acquisitionNumber": 1,
+                "ID": "0-CT5",
+                "parameters/xrayTubeCurrent": 80,
+                "parameters/rescale/intercept": "-1000",
+                "start_date": "2025-06-23",
+                "parameters/convolutionKernel": "Ram-Lak",
+                "frames": 64,
+                "parameters/collectionDiameter": 450,
+                "parameters/rescale/slope": "1",
+                "parameters/fov/y": 384,
+                "scanner/model": "OBI Cone-beam CT",
+                "parameters/fov/x": 384,
+                "quality": "usable",
+                "parameters/exposureTime": 8502,
+                "UID": "1.2.246.352.61.2.5511502138807804435.14105543405550566060",
+                "parameters/gantryTilt": 0,
+                "parameters/orientation": "Tra",
+                "parameters/exposure": 680,
+                "parameters/distanceSourceToPatient": 0
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 64,
+                        "xnat_abstractresource_id": 138,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-CT6/DICOM/scan_0-CT6_catalog.xml",
+                        "file_size": 18997232,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 138
+                      }
+                    },
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 11181,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 13 09:26:06 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 250,
+                        "format": "GIF",
+                        "description": "Snapshots for session SYZLXNAT_E00004 scan 0-CT6",
+                        "label": "SNAPSHOTS",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-CT6/SNAPSHOTS/0-CT6_catalog.xml",
+                        "content": "SNAPSHOTS",
+                        "file_size": 62354,
+                        "xnat_abstractResource_id": 250
+                      }
+                    }
+                  ]
+                },
+                {
+                  "field": "parameters/focalSpots/focalSpot",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:ctScanData_focalSpot",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "xnat_ctScanData_focalSpot_id": 22,
+                        "focalSpot": 0.1
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "CT",
+                "parameters/distanceSourceToDetector": 1503.04827449093,
+                "parameters/kvp": 125,
+                "parameters/options": "SHARP",
+                "parameters/tableHeight": 99,
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 132,
+                "parameters/voxelRes/z": 2.5,
+                "xnat_imagescandata_id": 132,
+                "parameters/voxelRes/x": 1.171875,
+                "parameters/voxelRes/y": 1.171875,
+                "parameters/rotationDirection": "CW",
+                "scanner": "TR-SN6382",
+                "parameters/imageType": "ORIGINAL\\\\PRIMARY\\\\AXIAL",
+                "startTime": "10:54:01",
+                "parameters/acquisitionNumber": 1,
+                "ID": "0-CT6",
+                "parameters/xrayTubeCurrent": 80,
+                "parameters/rescale/intercept": "-1000",
+                "start_date": "2025-05-27",
+                "parameters/convolutionKernel": "Ram-Lak",
+                "frames": 64,
+                "parameters/collectionDiameter": 450,
+                "parameters/rescale/slope": "1",
+                "parameters/fov/y": 384,
+                "scanner/model": "OBI Cone-beam CT",
+                "parameters/fov/x": 384,
+                "quality": "usable",
+                "parameters/exposureTime": 8476,
+                "UID": "1.2.246.352.61.2.5662972647297657953.548934362675263133",
+                "parameters/gantryTilt": 0,
+                "parameters/orientation": "Tra",
+                "parameters/exposure": 678,
+                "parameters/distanceSourceToPatient": 0
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 122,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT1/secondary/scan_0-OT1_secondary_catalog.xml",
+                        "file_size": 10466,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 122
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false
+              },
+              "data_fields": {
+                "modality": "RTSTRUCT",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "S1_PDQA",
+                "xnat_imageScanData_id": 116,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.4615495618584533648.16687337074639405753",
+                "xnat_imagescandata_id": 116,
+                "scanner": "TR-SN6382",
+                "startTime": "10:53:17",
+                "ID": "0-OT1",
+                "start_date": "2025-05-27"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 136,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT10/secondary/scan_0-OT10_secondary_catalog.xml",
+                        "file_size": 10516,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 136
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTSTRUCT",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 130,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5531420101416888182.10265172548015220394",
+                "xnat_imagescandata_id": 130,
+                "scanner": "TR-SN6382",
+                "startTime": "10:23:31",
+                "ID": "0-OT10",
+                "start_date": "2025-06-03"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 137,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT11/secondary/scan_0-OT11_secondary_catalog.xml",
+                        "file_size": 58600,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 137
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:otherDicomScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "REG",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 131,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5641593014681878660.1697434280197596336",
+                "xnat_imagescandata_id": 131,
+                "scanner": "TR-SN6382",
+                "startTime": "10:36:20",
+                "ID": "0-OT11",
+                "start_date": "2025-06-10"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 139,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT12/DICOM/scan_0-OT12_catalog.xml",
+                        "file_size": 3150760,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 139
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTIMAGE",
+                "frames": 2,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 133,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5673085281130905528.491538404334128051",
+                "xnat_imagescandata_id": 133,
+                "scanner": "TR-SN6382",
+                "startTime": "12:13:47",
+                "ID": "0-OT12",
+                "start_date": "2025-05-22"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 140,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT13/secondary/scan_0-OT13_secondary_catalog.xml",
+                        "file_size": 10472,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 140
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTSTRUCT",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 134,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5702159244029834488.18189182374088665259",
+                "xnat_imagescandata_id": 134,
+                "scanner": "TR-SN6382",
+                "startTime": "10:32:45",
+                "ID": "0-OT13",
+                "start_date": "2025-06-16"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 123,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT2/secondary/scan_0-OT2_secondary_catalog.xml",
+                        "file_size": 58676,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 123
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 147,
+                "xsi:type": "xnat:otherDicomScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 08:02:08 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "REG",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "CBCT",
+                "xnat_imageScanData_id": 117,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.4636330230461703224.15574285679683362443",
+                "xnat_imagescandata_id": 117,
+                "scanner": "TR-SN6382",
+                "startTime": "10:26:50",
+                "ID": "0-OT2",
+                "start_date": "2025-06-03"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 125,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT3/secondary/scan_0-OT3_secondary_catalog.xml",
+                        "file_size": 58606,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 125
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:otherDicomScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "REG",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 119,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.4887872614624745776.17357231047467233410",
+                "xnat_imagescandata_id": 119,
+                "scanner": "TR-SN6382",
+                "startTime": "10:26:25",
+                "ID": "0-OT3",
+                "start_date": "2025-06-23"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 126,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT4/secondary/scan_0-OT4_secondary_catalog.xml",
+                        "file_size": 58614,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 126
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:otherDicomScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "REG",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 120,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5015165682023395469.12567193539654524822",
+                "xnat_imagescandata_id": 120,
+                "scanner": "TR-SN6382",
+                "startTime": "10:57:29",
+                "ID": "0-OT4",
+                "start_date": "2025-05-27"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 127,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT5/secondary/scan_0-OT5_secondary_catalog.xml",
+                        "file_size": 10466,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 127
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTSTRUCT",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 121,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5036357495800086786.6303014952840268182",
+                "xnat_imagescandata_id": 121,
+                "scanner": "TR-SN6382",
+                "startTime": "10:22:32",
+                "ID": "0-OT5",
+                "start_date": "2025-06-23"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 128,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT6/secondary/scan_0-OT6_secondary_catalog.xml",
+                        "file_size": 10458,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 128
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTSTRUCT",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 122,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5096496176572823596.10815265344741746836",
+                "xnat_imagescandata_id": 122,
+                "scanner": "TR-SN6382",
+                "startTime": "10:31:58",
+                "ID": "0-OT6",
+                "start_date": "2025-06-10"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 129,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT7/secondary/scan_0-OT7_secondary_catalog.xml",
+                        "file_size": 10448,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 129
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTSTRUCT",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 123,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5098019975098498258.16977264328497120701",
+                "xnat_imagescandata_id": 123,
+                "scanner": "TR-SN6382",
+                "startTime": "11:12:45",
+                "ID": "0-OT7",
+                "start_date": "2025-05-26"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 131,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT8/secondary/scan_0-OT8_secondary_catalog.xml",
+                        "file_size": 58592,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 131
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:otherDicomScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "REG",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 125,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5155641941799011692.6462021152884653981",
+                "xnat_imagescandata_id": 125,
+                "scanner": "TR-SN6382",
+                "startTime": "11:17:12",
+                "ID": "0-OT8",
+                "start_date": "2025-05-26"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 134,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/0-OT9/secondary/scan_0-OT9_secondary_catalog.xml",
+                        "file_size": 58656,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 134
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:otherDicomScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "REG",
+                "frames": 0,
+                "scanner/model": "On-Board Imager",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "unknown",
+                "xnat_imageScanData_id": 128,
+                "quality": "usable",
+                "UID": "1.2.246.352.61.2.5499874881233447573.3092005201608582046",
+                "xnat_imagescandata_id": 128,
+                "scanner": "TR-SN6382",
+                "startTime": "10:36:08",
+                "ID": "0-OT9",
+                "start_date": "2025-06-16"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 141,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT1/secondary/scan_1-OT1_secondary_catalog.xml",
+                        "file_size": 4546,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 141
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.1161080137.60969.20175.174.51",
+                "xnat_imagescandata_id": 135,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT1",
+                "type": "unknown",
+                "xnat_imageScanData_id": 135,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 150,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT10/secondary/scan_1-OT10_secondary_catalog.xml",
+                        "file_size": 4584,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 150
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.2062554975.11323.17505.176.180",
+                "xnat_imagescandata_id": 144,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT10",
+                "type": "unknown",
+                "xnat_imageScanData_id": 144,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 151,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT11/secondary/scan_1-OT11_secondary_catalog.xml",
+                        "file_size": 4584,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 151
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.2099079890.22274.16867.131.188",
+                "xnat_imagescandata_id": 145,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT11",
+                "type": "unknown",
+                "xnat_imageScanData_id": 145,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 152,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT12/secondary/scan_1-OT12_secondary_catalog.xml",
+                        "file_size": 4552,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 152
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.2174938217.21922.18609.184.202",
+                "xnat_imagescandata_id": 146,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT12",
+                "type": "unknown",
+                "xnat_imageScanData_id": 146,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 153,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT13/secondary/scan_1-OT13_secondary_catalog.xml",
+                        "file_size": 4552,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 153
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.2325428933.28285.17544.189.190",
+                "xnat_imagescandata_id": 147,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT13",
+                "type": "unknown",
+                "xnat_imageScanData_id": 147,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 154,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT14/secondary/scan_1-OT14_secondary_catalog.xml",
+                        "file_size": 4560,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 154
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.2343407468.26427.18353.160.226",
+                "xnat_imagescandata_id": 148,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT14",
+                "type": "unknown",
+                "xnat_imageScanData_id": 148,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 155,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT15/secondary/scan_1-OT15_secondary_catalog.xml",
+                        "file_size": 4586,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 155
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.2663779633.37848.16462.166.211",
+                "xnat_imagescandata_id": 149,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT15",
+                "type": "unknown",
+                "xnat_imageScanData_id": 149,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 156,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT16/secondary/scan_1-OT16_secondary_catalog.xml",
+                        "file_size": 4586,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 156
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.321749510.13970.16470.186.6",
+                "xnat_imagescandata_id": 150,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT16",
+                "type": "unknown",
+                "xnat_imageScanData_id": 150,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 157,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT17/secondary/scan_1-OT17_secondary_catalog.xml",
+                        "file_size": 4548,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 157
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.3248685573.2329.20294.156.206",
+                "xnat_imagescandata_id": 151,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT17",
+                "type": "unknown",
+                "xnat_imageScanData_id": 151,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 158,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT18/secondary/scan_1-OT18_secondary_catalog.xml",
+                        "file_size": 4592,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 158
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.3414269545.37405.17754.183.229",
+                "xnat_imagescandata_id": 152,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT18",
+                "type": "unknown",
+                "xnat_imageScanData_id": 152,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 159,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT19/secondary/scan_1-OT19_secondary_catalog.xml",
+                        "file_size": 4592,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 159
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.3798492435.25047.19957.167.131",
+                "xnat_imagescandata_id": 153,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT19",
+                "type": "unknown",
+                "xnat_imageScanData_id": 153,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 142,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT2/secondary/scan_1-OT2_secondary_catalog.xml",
+                        "file_size": 4552,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 142
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.1200499801.40549.19013.178.214",
+                "xnat_imagescandata_id": 136,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT2",
+                "type": "unknown",
+                "xnat_imageScanData_id": 136,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 160,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT20/secondary/scan_1-OT20_secondary_catalog.xml",
+                        "file_size": 4588,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 160
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.3883710461.6939.17625.134.191",
+                "xnat_imagescandata_id": 154,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT20",
+                "type": "unknown",
+                "xnat_imageScanData_id": 154,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 161,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT21/secondary/scan_1-OT21_secondary_catalog.xml",
+                        "file_size": 4590,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 161
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.4005524662.6041.16546.157.55",
+                "xnat_imagescandata_id": 155,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT21",
+                "type": "unknown",
+                "xnat_imageScanData_id": 155,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 162,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT22/secondary/scan_1-OT22_secondary_catalog.xml",
+                        "file_size": 4552,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 162
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.401378209.62032.17417.165.133",
+                "xnat_imagescandata_id": 156,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT22",
+                "type": "unknown",
+                "xnat_imageScanData_id": 156,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 163,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT23/secondary/scan_1-OT23_secondary_catalog.xml",
+                        "file_size": 4580,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 163
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.402839703.62159.16459.130.213",
+                "xnat_imagescandata_id": 157,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT23",
+                "type": "unknown",
+                "xnat_imageScanData_id": 157,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 164,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT24/secondary/scan_1-OT24_secondary_catalog.xml",
+                        "file_size": 4580,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 164
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.40396585.45192.17537.175.121",
+                "xnat_imagescandata_id": 158,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT24",
+                "type": "unknown",
+                "xnat_imageScanData_id": 158,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 165,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT25/secondary/scan_1-OT25_secondary_catalog.xml",
+                        "file_size": 4574,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 165
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.456797089.876.19842.175.2",
+                "xnat_imagescandata_id": 159,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT25",
+                "type": "unknown",
+                "xnat_imageScanData_id": 159,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 143,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT3/secondary/scan_1-OT3_secondary_catalog.xml",
+                        "file_size": 4552,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 143
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.1535449896.5963.18548.146.161",
+                "xnat_imagescandata_id": 137,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT3",
+                "type": "unknown",
+                "xnat_imageScanData_id": 137,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 144,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT4/secondary/scan_1-OT4_secondary_catalog.xml",
+                        "file_size": 4580,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 144
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.1562845246.21857.18119.182.124",
+                "xnat_imagescandata_id": 138,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT4",
+                "type": "unknown",
+                "xnat_imageScanData_id": 138,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 145,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT5/secondary/scan_1-OT5_secondary_catalog.xml",
+                        "file_size": 4574,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 145
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.15931225.3592.18077.191.230",
+                "xnat_imagescandata_id": 139,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT5",
+                "type": "unknown",
+                "xnat_imageScanData_id": 139,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 146,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT6/secondary/scan_1-OT6_secondary_catalog.xml",
+                        "file_size": 4596,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 146
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.1744734780.53341.19145.186.163",
+                "xnat_imagescandata_id": 140,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT6",
+                "type": "unknown",
+                "xnat_imageScanData_id": 140,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 147,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT7/secondary/scan_1-OT7_secondary_catalog.xml",
+                        "file_size": 4580,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 147
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.1793732647.18626.17973.141.71",
+                "xnat_imagescandata_id": 141,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT7",
+                "type": "unknown",
+                "xnat_imageScanData_id": 141,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 148,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT8/secondary/scan_1-OT8_secondary_catalog.xml",
+                        "file_size": 4580,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 148
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.1983772762.6024.19831.160.234",
+                "xnat_imagescandata_id": 142,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT8",
+                "type": "unknown",
+                "xnat_imageScanData_id": 142,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 149,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/1-OT9/secondary/scan_1-OT9_secondary_catalog.xml",
+                        "file_size": 4548,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 149
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "UID": "1.2.246.352.81.4.1987549061.58165.18998.138.78",
+                "xnat_imagescandata_id": 143,
+                "modality": "RTRECORD",
+                "frames": 0,
+                "scanner/model": "2300IX",
+                "project": "20260318",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "ID": "1-OT9",
+                "type": "unknown",
+                "xnat_imageScanData_id": 143,
+                "quality": "usable"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 169,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/12/secondary/scan_12_secondary_catalog.xml",
+                        "file_size": 16542686,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 169
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTSTRUCT",
+                "frames": 0,
+                "scanner/model": "ARIA RTM",
+                "project": "20260318",
+                "series_description": "ARIA RadOnc Structure Sets",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "ARIA RadOnc Structure Sets",
+                "xnat_imageScanData_id": 163,
+                "quality": "usable",
+                "UID": "1.2.246.352.205.5475196375689762526.7004088836371230358",
+                "xnat_imagescandata_id": 163,
+                "scanner": "ARIASVR",
+                "startTime": "09:56:22",
+                "ID": "12",
+                "start_date": "2025-05-22"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 170,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/14/secondary/scan_14_secondary_catalog.xml",
+                        "file_size": 380602,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 170
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTPLAN",
+                "frames": 0,
+                "scanner/model": "ARIA RadOnc",
+                "project": "20260318",
+                "series_description": "S1_PDQA",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "S1_PDQA",
+                "xnat_imageScanData_id": 164,
+                "quality": "usable",
+                "UID": "1.2.246.352.71.2.811069898310.3457168.20250522095634",
+                "xnat_imagescandata_id": 164,
+                "scanner": "ARIASVR",
+                "startTime": "09:56:34",
+                "ID": "14",
+                "start_date": "2025-05-22"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 171,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/15/DICOM/scan_15_catalog.xml",
+                        "file_size": 1659092,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 171
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTIMAGE",
+                "frames": 1,
+                "scanner/model": "ARIA RadOnc",
+                "project": "20260318",
+                "series_description": "Eclipse Predicted Portal Dose Images",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "Eclipse Predicted Portal Dose Images",
+                "xnat_imageScanData_id": 165,
+                "quality": "usable",
+                "UID": "1.2.246.352.71.2.811069898310.3457170.20250522095641",
+                "xnat_imagescandata_id": 165,
+                "scanner": "ARIASVR",
+                "startTime": "09:56:41",
+                "ID": "15",
+                "start_date": "2025-05-22"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 172,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/16/DICOM/scan_16_catalog.xml",
+                        "file_size": 1655002,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 172
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTIMAGE",
+                "frames": 1,
+                "scanner/model": "ARIA RadOnc",
+                "project": "20260318",
+                "series_description": "Eclipse Predicted Portal Dose Images",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "Eclipse Predicted Portal Dose Images",
+                "xnat_imageScanData_id": 166,
+                "quality": "usable",
+                "UID": "1.2.246.352.71.2.811069898310.3457171.20250522095641",
+                "xnat_imagescandata_id": 166,
+                "scanner": "ARIASVR",
+                "startTime": "09:56:41",
+                "ID": "16",
+                "start_date": "2025-05-22"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 183,
+                        "xnat_abstractresource_id": 166,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/3/DICOM/scan_3_catalog.xml",
+                        "file_size": 96333114,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 166
+                      }
+                    },
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 139,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:33:42 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 2,
+                        "xnat_abstractresource_id": 173,
+                        "format": "GIF",
+                        "description": "Snapshots for session SYZLXNAT_E00004 scan 3",
+                        "label": "SNAPSHOTS",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/3/SNAPSHOTS/3_catalog.xml",
+                        "content": "SNAPSHOTS",
+                        "file_size": 86032,
+                        "xnat_abstractResource_id": 173
+                      }
+                    }
+                  ]
+                },
+                {
+                  "field": "parameters/focalSpots/focalSpot",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:ctScanData_focalSpot",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "xnat_ctScanData_focalSpot_id": 23,
+                        "focalSpot": 1.2
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 147,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 08:02:08 UTC 2026"
+              },
+              "data_fields": {
+                "parameters/filter": "FLAT",
+                "modality": "CT",
+                "parameters/distanceSourceToDetector": 1085.6,
+                "parameters/kvp": 120,
+                "parameters/tableHeight": 195.5,
+                "project": "20260318",
+                "series_description": "Pelvis  3.0  B31f",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "SIEMENS",
+                "type": "DCT",
+                "xnat_imageScanData_id": 160,
+                "parameters/voxelRes/z": 3,
+                "xnat_imagescandata_id": 160,
+                "parameters/voxelRes/x": 0.9765625,
+                "parameters/voxelRes/y": 0.9765625,
+                "parameters/rotationDirection": "CW",
+                "scanner": "CTAWP95526",
+                "parameters/imageType": "ORIGINAL\\\\PRIMARY\\\\AXIAL\\\\CT_SOM5 SPI",
+                "startTime": "09:48:00",
+                "parameters/acquisitionNumber": 3,
+                "ID": "3",
+                "parameters/xrayTubeCurrent": 420,
+                "parameters/rescale/intercept": "-1024",
+                "start_date": "2025-05-20",
+                "parameters/convolutionKernel": "B31f",
+                "frames": 183,
+                "parameters/collectionDiameter": 500,
+                "parameters/rescale/slope": "1",
+                "parameters/fov/y": 512,
+                "scanner/model": "SOMATOM Definition AS",
+                "parameters/fov/x": 512,
+                "quality": "usable",
+                "parameters/exposureTime": 500,
+                "UID": "1.3.12.2.1107.5.1.4.95526.30000025052000280569600000409",
+                "parameters/gantryTilt": 0,
+                "parameters/orientation": "Tra",
+                "bodyPartExamined": "PELVIS",
+                "parameters/exposure": 210,
+                "parameters/distanceSourceToPatient": 595,
+                "parameters/generatorPower": 50,
+                "parameters/ctDIvol": 16.961216999999998
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 167,
+                        "format": "DICOM",
+                        "label": "secondary",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/6/secondary/scan_6_secondary_catalog.xml",
+                        "file_size": 382444,
+                        "content": "secondary",
+                        "xnat_abstractResource_id": 167
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTPLAN",
+                "frames": 0,
+                "scanner/model": "ARIA RadOnc",
+                "project": "20260318",
+                "series_description": "S1_2F_IMRT",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "S1_2F_IMRT",
+                "xnat_imageScanData_id": 161,
+                "quality": "usable",
+                "UID": "1.2.246.352.71.2.811069898310.3453709.20250521081437",
+                "xnat_imagescandata_id": 161,
+                "scanner": "ARIASVR",
+                "startTime": "08:14:37",
+                "ID": "6",
+                "start_date": "2025-05-21"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 136,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 1,
+                        "xnat_abstractresource_id": 168,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/7/DICOM/scan_7_catalog.xml",
+                        "file_size": 10683668,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 168
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 136,
+                "xsi:type": "xnat:rtImageScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 06 07:28:00 UTC 2026"
+              },
+              "data_fields": {
+                "modality": "RTDOSE",
+                "frames": 183,
+                "scanner/model": "ARIA RadOnc",
+                "project": "20260318",
+                "series_description": "Eclipse Doses",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "scanner/manufacturer": "Varian Medical Systems",
+                "type": "Eclipse Doses",
+                "xnat_imageScanData_id": 162,
+                "quality": "usable",
+                "UID": "1.2.246.352.71.2.811069898310.3453710.20250521081437",
+                "xnat_imagescandata_id": 162,
+                "scanner": "ARIASVR",
+                "startTime": "08:14:37",
+                "ID": "7",
+                "start_date": "2025-05-21"
+              }
+            },
+            {
+              "children": [
+                {
+                  "field": "file",
+                  "items": [
+                    {
+                      "children": [],
+                      "meta": {
+                        "create_event_id": 10843,
+                        "xsi:type": "xnat:resourceCatalog",
+                        "isHistory": false,
+                        "start_date": "Mon Apr 13 08:19:41 UTC 2026"
+                      },
+                      "data_fields": {
+                        "file_count": 64,
+                        "xnat_abstractresource_id": 245,
+                        "format": "DICOM",
+                        "label": "DICOM",
+                        "URI": "/data/xnat/archive/20260318/arc001/hankaicong_CT_1/SCANS/sfaHU67/DICOM/DICOM_catalog.xml",
+                        "file_size": 18996834,
+                        "content": "RAW",
+                        "xnat_abstractResource_id": 245
+                      }
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "create_event_id": 10844,
+                "xsi:type": "xnat:ctScanData",
+                "isHistory": false,
+                "start_date": "Mon Apr 13 08:21:39 UTC 2026"
+              },
+              "data_fields": {
+                "xnat_imagescandata_id": 4264,
+                "note": "hahaha",
+                "project": "20260318",
+                "series_description": "uuigBGBH78",
+                "image_session_ID": "SYZLXNAT_E00004",
+                "ID": "sfaHU67",
+                "type": "CT",
+                "xnat_imageScanData_id": 4264,
+                "quality": "usable"
+              }
+            }
+          ]
+        }
+      ],
+      "meta": {
+        "create_event_id": 209,
+        "xsi:type": "xnat:ctSessionData",
+        "isHistory": false,
+        "start_date": "Wed Apr 08 06:36:04 UTC 2026"
+      },
+      "data_fields": {
+        "dcmPatientBirthDate": "1972-07-24",
+        "dcmPatientId": "hankaicong_CT_1",
+        "subject_ID": "SYZLXNAT_S00003",
+        "date": "2025-05-20",
+        "dcmAccessionNumber": "202505202025-05-",
+        "custom_fields": "{}",
+        "prearchivePath": "/data/xnat/prearchive/20260318/20260406_071918447/hankaicong_CT_1",
+        "project": "20260318",
+        "study_id": "CT20250520071229",
+        "label": "hankaicong_CT_1",
+        "acquisition_site": "324fsdx",
+        "dcmPatientName": "hankaicong",
+        "UID": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841",
+        "scanner": "ARIASVR,CTAWP95526,TR-SN6382",
+        "visit_id": "215fa",
+        "session_type": "20260318",
+        "ID": "SYZLXNAT_E00004",
+        "id": "SYZLXNAT_E00004"
       }
-    ],
-    "Result": [
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "0a82ea738ed6ada8e1eb74a2191aa04d",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-32-1buul3u.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-32-1buul3u.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296836",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "db63821b98253c92975b48dbffeb6c98",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-23-1h2ot1j.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-23-1h2ot1j.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "22d8d360a2832892eaf187fda10a8c80",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-43-1c9ssvo.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-43-1c9ssvo.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "80f476e9c21e219e79af79fa873083d9",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-15-16cxubo.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-15-16cxubo.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "5ebc2c1d5b19ef9125f28cc5baf8536f",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-11-pl4sim.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-11-pl4sim.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "7dbfd099710ac9b80df7b40a5496f9f6",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-30-klym34.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-30-klym34.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "2fdf52c56875119f00990e6d4e4e908a",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-41-1tf2chl.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-41-1tf2chl.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "48b69071dd2c1e19a63c3836b52f7e0b",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-10-96boaw.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-10-96boaw.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "0976127f5425c718c6bd60a9e787deca",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-33-1cl8d37.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-33-1cl8d37.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "c124d67f3bef8b5a1cf18b11f6442a0f",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-47-7bumxy.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-47-7bumxy.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "578be906522c30a44b7693278751d82d",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-37-rno84r.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-37-rno84r.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "1bf0a3524645f8a6d1d60c7406932636",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-4-11bdd6d.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-4-11bdd6d.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "de6feceadea6f9ce7db335e5a6324315",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-38-kd13xj.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-38-kd13xj.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "c26d39100436f8affffa9867185f9114",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-34-lsatc1.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-34-lsatc1.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "72eb048679efcc0dc3bed8021ff77f4e",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-40-17tva03.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-40-17tva03.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "9ea0732571c7d242ddf2182448a3d4a5",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-22-2e9n0u.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-22-2e9n0u.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "e53414a60e11cf56a3029ca1087cecb2",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-54-1eeoj3d.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-54-1eeoj3d.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "6b47e5d904d68fd88392d720a255ba43",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-52-qwe60x.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-52-qwe60x.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296836",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "1c4a833541f7b93a42bcb34f996cb8d9",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-13-37ge6s.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-13-37ge6s.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "854efcb41e99a7cbc42da05038295135",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-24-16qaees.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-24-16qaees.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "103fa7ad1c662dc80f0db5bd498652af",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-62-1xa4vgs.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-62-1xa4vgs.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "79401a7fe9e78d78ecda69f2adb11fb0",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-56-1m7x7b2.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-56-1m7x7b2.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296826",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "297d039ed4fa7fa7da14428a2a431ecf",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-44-84p96b.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-44-84p96b.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "b82be4a6a54488ef7946a07e4ec06ae0",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-35-182utqt.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-35-182utqt.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "93f7cda3d7a763eddc11fc179c0540a3",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-51-1s6yve0.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-51-1s6yve0.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "164ea30cf1c2b59d7998c070672a4c68",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-53-dwfqz1.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-53-dwfqz1.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "57987b548ddfaa921a230a589ff0abc1",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-21-1vm3ppg.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-21-1vm3ppg.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "1c77536ee817bf721e1588a1ab14dcd9",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-59-14ufof1.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-59-14ufof1.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "a2b24c0eb857032f020215825bca312d",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-17-7rpd4c.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-17-7rpd4c.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296836",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "1e348e648fbfa05714f8777991d76260",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-9-1neer1v.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-9-1neer1v.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "b3941bffe7f91308febb8a3e5716ed78",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-55-l3hsv2.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-55-l3hsv2.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "b3f1c8ba6812a03a08e7fd288c8e3419",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-27-18kiz3r.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-27-18kiz3r.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "ed47dd9ca723efed0fcb66c3db3bce9f",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-29-5cnksp.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-29-5cnksp.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "32b84fbc6ca57664cc660d29f6d257d2",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-61-1qszync.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-61-1qszync.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "42da4dfba293a8ee2d34bb728441ab1e",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-18-12m2dwe.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-18-12m2dwe.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "91a22c397ca584ead07b349b2dd7d4d8",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-19-1q0gqqu.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-19-1q0gqqu.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "33007d106fcde14706fcaf27ec5a1b06",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-28-poxyfd.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-28-poxyfd.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "1fe5ef99942bcd31be90504d12121f28",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-46-1mtyixj.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-46-1mtyixj.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "166b09de3b42df7b62a075b25220da24",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-58-1yiopsd.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-58-1yiopsd.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "b464660f4011afbbfb4f961db2e0e2bf",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-20-m6mpve.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-20-m6mpve.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296836",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "72f84edc3fddfbbe53efa2c248b9d420",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-7-1e92xes.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-7-1e92xes.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "8b6fe66814614ff37770dc742d7a159f",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-2-whze68.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-2-whze68.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296836",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "a14a6c143dd9c707b7a901a3001aa600",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-3-1eqojsa.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-3-1eqojsa.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "7cb6f0c238b952cac7a1a238bb01cd0a",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-49-jp3d3m.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-49-jp3d3m.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "170b9618b152c1ccc9d68063bafab62e",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-36-691yso.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-36-691yso.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296836",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "f15df0e2bc4731f290315ac333a33467",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-1-uqri23.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-1-uqri23.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "f8f071b733a0e65eb6acf103e355821b",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-48-16zat90.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-48-16zat90.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296826",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "7aa13518fc1a22ae8ebb7528d1b9f62e",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-6-1keitr7.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-6-1keitr7.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "68e7c78934e62d8862eef3e6c2d9926b",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-8-8o87kj.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-8-8o87kj.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "aa6209d7b5f786590f145825e4f7b9bc",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-57-su4ci6.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-57-su4ci6.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "6191d7ed7d89ed61d33a6cec70c42b87",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-12-fw5fzn.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-12-fw5fzn.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "ee948464bcf894343e42544f92a39324",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-0-1hv26df.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-0-1hv26df.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "7f0d774fbf78e9a2f53b7817231510c9",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-45-1s79vfm.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-45-1s79vfm.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "a828357e0e578eddea0fea105b02c475",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-60-1e5xzrn.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-60-1e5xzrn.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "05e59cbe007e0f6ca2f651f19bea44fb",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-14-1ukrxo4.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-14-1ukrxo4.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "321a64537dab0248c6d684a321fbf277",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-5-s5eb3a.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-5-s5eb3a.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296832",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "774c1172dfb4285df7a6270b5b1f5e53",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-50-wjit3h.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-50-wjit3h.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "59233c587916c0d2248b3dc9f057440d",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-16-1a9z9kh.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-16-1a9z9kh.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296828",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "6940600b969e43dc6ecf581555ed379b",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-42-18ypcdf.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-42-18ypcdf.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296830",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "c5653b6e491c0f36ca8a811d7cc6bbe0",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-26-1t2fao.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-26-1t2fao.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296836",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "cf20e8107b6b8505594ca4a288a7c94b",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-25-yckuz4.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-25-yckuz4.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "ba72fe2ed458d5af8cbd4f63387dab5f",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-39-1fo789b.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-39-1fo789b.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "1560b833864e981e7f8abca13ca670dc",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-63-fflirs.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-63-fflirs.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "296834",
-        "file_tags": "",
-        "cat_ID": "124",
-        "digest": "a4929562760dba86dfaae123c195e196",
-        "collection": "DICOM",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-CT1/resources/124/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-31-ghutvj.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-31-ghutvj.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "10466",
-        "file_tags": "",
-        "cat_ID": "122",
-        "digest": "8cffaa7afb5575deca51d33f803fe762",
-        "collection": "secondary",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-OT1/resources/122/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-no-value-for-InstanceNumber-65640y.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-no-value-for-InstanceNumber-65640y.dcm"
-      },
-      {
-        "file_content": "",
-        "Size": "58676",
-        "file_tags": "",
-        "cat_ID": "123",
-        "digest": "7992b5d5dc18d7e98839d6b8086092da",
-        "collection": "secondary",
-        "URI": "/data/experiments/SYZLXNAT_E00004/scans/0-OT2/resources/123/files/1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-1-14u9fou.dcm",
-        "file_format": "DICOM",
-        "Name": "1.2.40.0.13.1.1.192.192.186.171.20250520070000051.32841-0-1-14u9fou.dcm"
-      }
-    ],
-    "title": "Files"
-  }
+    }
+  ]
 }
