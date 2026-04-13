@@ -235,14 +235,25 @@ class UploadSubjects:
                     print(f"[SUCCESS] [Scan] {scan_task.args[-3]} {scan_task.args[-2]} {scan_task.args[-1].id}")
 
         if resources:
+            retry_times = 5
             for idx, resource_task in enumerate(self.project_tasks[self.projectID]['resources']):
                 if idx < recover_index:
                     continue
 
-                print(f"[INFO] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
+                print(f"\033[31m[INFO] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}\033[0m")
                 failed_list = resource_task()
                 if failed_list:
-                    print(f"[ERROR] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
-                    raise HTTPError()
+                    failed_flag = True
+                    # 有时候上传就是要抽风, 多试几次即可
+                    for i in range(retry_times):
+                        print(f'\033[31m[INFO] [Resources] {idx=} 上传失败, 重试第 {i} 次......\033[0m')
+                        failed_list = resource_task()
+                        if not failed_list:
+                            failed_flag = False
+                            print(f"[SUCCESS] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
+                            break
+                    if failed_flag:
+                        print(f"\033[31m[ERROR] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}\033[0m")
+                        raise HTTPError()
                 else:
                     print(f"[SUCCESS] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
