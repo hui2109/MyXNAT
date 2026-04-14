@@ -198,6 +198,14 @@ class UploadSubjects:
                     self.project_tasks[self.projectID]['subjects'].append(
                         partial(create_subject, self.session, project_id, my_subject))
 
+    def __try_resource_task(self):
+        try:
+            failed_list = self.resource_task()
+            return failed_list
+        except Exception as e:
+            print(f"[ERROR] [Resource] {e} 再次尝试......")
+            self.__try_resource_task()
+
     def creat_tasks(self):
         # 先整理数据
         subject_list = self._sort_by_subject()
@@ -241,13 +249,14 @@ class UploadSubjects:
                     continue
 
                 print(f"\033[31m[INFO] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}\033[0m")
-                failed_list = resource_task()
+                self.resource_task = resource_task
+                failed_list = self.__try_resource_task()
                 if failed_list:
                     failed_flag = True
                     # 有时候上传就是要抽风, 多试几次即可
                     for i in range(retry_times):
                         print(f'\033[31m[INFO] [Resources] {idx=} 上传失败, 重试第 {i} 次......\033[0m')
-                        failed_list = resource_task()
+                        failed_list = self.__try_resource_task()
                         if not failed_list:
                             failed_flag = False
                             print(f"[SUCCESS] [Resources] {idx=} {resource_task.args[-4]} {resource_task.args[-3]} {resource_task.args[-2]} {resource_task.args[-1].absolute()}")
