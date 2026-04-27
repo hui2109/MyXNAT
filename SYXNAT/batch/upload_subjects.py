@@ -71,7 +71,7 @@ class UploadSubjects:
             self.my_experiment.label = f"{self.study}_{self.idx}_{self.my_subject.label}"
 
         if self.my_experiment.xsiType is None:
-            self.my_experiment.xsiType = ExperimentType.RTSession
+            self.my_experiment.xsiType = ExperimentType.CTSession
 
         if self.my_experiment.date == '':
             self.my_experiment.date = fmt_date(get_dcm_field(dcm_file, 'StudyDate'))
@@ -98,7 +98,7 @@ class UploadSubjects:
             self.my_scan.type = self.modality.name
 
         if self.my_scan.xsiType is None:
-            self.my_scan.xsiType = ScanType.RTScan
+            self.my_scan.xsiType = ScanType.CTScan
 
         if self.my_scan.quality is None:
             self.my_scan.quality = ScanQuality.usable

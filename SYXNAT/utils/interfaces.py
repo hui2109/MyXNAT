@@ -69,14 +69,14 @@ class MySubject(BaseModel):
 # Study字段类
 class MyExperiment(BaseModel):
     label: str = ''  # 序号 study_1_subjectLabel
-    xsiType: ExperimentType | None = None  # 类型 默认均为 ExperimentType.RTSession
+    xsiType: ExperimentType | None = None  # 类型 默认均为 ExperimentType.CTSession
     date: str = ''  # 日期 '2023-05-15'
     note: str = ''  # 备注
     operator: str = ''  # 主管医师 'wang ying'
+    UID: str = ''  # 重要 Study Instance UID
     # 自定义字段
     studyid: str = ''  # Study Instance UID
     modalities: list[str] = []  # 成像类型 ['CT', 'CBCT', 'RP']
-    UID: str = ''  # 重要 Study Instance UID
 
     # 待定字段
     visit_id: str = ''  # 访问ID 待定
@@ -96,7 +96,7 @@ class MyExperiment(BaseModel):
 class MyScan(BaseModel):
     id: str = ''  # 序列ID 'CT_Series1_64' CT成像类型_序列ID_帧数
     type: str = ''  # 成像类型 'CBCT'
-    xsiType: ScanType | None = None  # 类型 默认均为 ScanType.RTScan
+    xsiType: ScanType | None = None  # 类型 默认均为 ScanType.CTScan
     quality: ScanQuality | None = None  # 扫描质量 默认为 ScanQuality.usable
     scanner: str = ''  # 扫描机器 'SIEMENS_SOMATOM Definition AS_CTAWP95526' Manufacturer_Manufacturer’s Model Name_Station Name
     condition: str = ''  # 操作者(即采集这个Series的人的名字) 'yanyy'
